@@ -1,0 +1,14 @@
+D:\vs2019Project\LibraryReservationSystem\LibraryModels\bin\Debug\netstandard2.0\LibraryEntities.deps.json
+D:\vs2019Project\LibraryReservationSystem\LibraryModels\bin\Debug\netstandard2.0\LibraryEntities.dll
+D:\vs2019Project\LibraryReservationSystem\LibraryModels\bin\Debug\netstandard2.0\LibraryEntities.pdb
+D:\vs2019Project\LibraryReservationSystem\LibraryModels\bin\Debug\netstandard2.0\Microsoft.EntityFrameworkCore.dll
+D:\vs2019Project\LibraryReservationSystem\LibraryModels\bin\Debug\netstandard2.0\System.ComponentModel.Annotations.dll
+D:\vs2019Project\LibraryReservationSystem\LibraryModels\bin\Debug\netstandard2.0\Microsoft.EntityFrameworkCore.xml
+D:\vs2019Project\LibraryReservationSystem\LibraryModels\bin\Debug\netstandard2.0\System.ComponentModel.Annotations.xml
+D:\vs2019Project\LibraryReservationSystem\LibraryModels\obj\Debug\netstandard2.0\LibraryEntities.csprojAssemblyReference.cache
+D:\vs2019Project\LibraryReservationSystem\LibraryModels\obj\Debug\netstandard2.0\LibraryEntities.csproj.CoreCompileInputs.cache
+D:\vs2019Project\LibraryReservationSystem\LibraryModels\obj\Debug\netstandard2.0\LibraryEntities.AssemblyInfoInputs.cache
+D:\vs2019Project\LibraryReservationSystem\LibraryModels\obj\Debug\netstandard2.0\LibraryEntities.AssemblyInfo.cs
+D:\vs2019Project\LibraryReservationSystem\LibraryModels\obj\Debug\netstandard2.0\LibraryEntities.csproj.CopyComplete
+D:\vs2019Project\LibraryReservationSystem\LibraryModels\obj\Debug\netstandard2.0\LibraryEntities.dll
+D:\vs2019Project\LibraryReservationSystem\LibraryModels\obj\Debug\netstandard2.0\LibraryEntities.pdb

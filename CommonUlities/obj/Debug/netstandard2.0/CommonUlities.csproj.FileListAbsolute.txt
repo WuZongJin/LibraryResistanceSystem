@@ -1,0 +1,9 @@
+D:\vs2019Project\LibraryReservationSystem\CommonUlities\bin\Debug\netstandard2.0\CommonUlities.deps.json
+D:\vs2019Project\LibraryReservationSystem\CommonUlities\bin\Debug\netstandard2.0\CommonUlities.dll
+D:\vs2019Project\LibraryReservationSystem\CommonUlities\bin\Debug\netstandard2.0\CommonUlities.pdb
+D:\vs2019Project\LibraryReservationSystem\CommonUlities\obj\Debug\netstandard2.0\CommonUlities.csprojAssemblyReference.cache
+D:\vs2019Project\LibraryReservationSystem\CommonUlities\obj\Debug\netstandard2.0\CommonUlities.csproj.CoreCompileInputs.cache
+D:\vs2019Project\LibraryReservationSystem\CommonUlities\obj\Debug\netstandard2.0\CommonUlities.AssemblyInfoInputs.cache
+D:\vs2019Project\LibraryReservationSystem\CommonUlities\obj\Debug\netstandard2.0\CommonUlities.AssemblyInfo.cs
+D:\vs2019Project\LibraryReservationSystem\CommonUlities\obj\Debug\netstandard2.0\CommonUlities.dll
+D:\vs2019Project\LibraryReservationSystem\CommonUlities\obj\Debug\netstandard2.0\CommonUlities.pdb

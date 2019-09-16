@@ -1,0 +1,14 @@
+D:\vs2019Project\LibraryReservationSystem\LibraryServices\bin\Debug\netstandard2.0\LibraryEntities.dll
+D:\vs2019Project\LibraryReservationSystem\LibraryServices\obj\Debug\netstandard2.0\LibraryServices.csprojAssemblyReference.cache
+D:\vs2019Project\LibraryReservationSystem\LibraryServices\obj\Debug\netstandard2.0\LibraryServices.csproj.CoreCompileInputs.cache
+D:\vs2019Project\LibraryReservationSystem\LibraryServices\obj\Debug\netstandard2.0\LibraryServices.AssemblyInfoInputs.cache
+D:\vs2019Project\LibraryReservationSystem\LibraryServices\obj\Debug\netstandard2.0\LibraryServices.AssemblyInfo.cs
+D:\vs2019Project\LibraryReservationSystem\LibraryServices\bin\Debug\netstandard2.0\LibraryServices.deps.json
+D:\vs2019Project\LibraryReservationSystem\LibraryServices\bin\Debug\netstandard2.0\LibraryServices.dll
+D:\vs2019Project\LibraryReservationSystem\LibraryServices\bin\Debug\netstandard2.0\LibraryServices.pdb
+D:\vs2019Project\LibraryReservationSystem\LibraryServices\bin\Debug\netstandard2.0\CommonUlities.dll
+D:\vs2019Project\LibraryReservationSystem\LibraryServices\bin\Debug\netstandard2.0\CommonUlities.pdb
+D:\vs2019Project\LibraryReservationSystem\LibraryServices\bin\Debug\netstandard2.0\LibraryEntities.pdb
+D:\vs2019Project\LibraryReservationSystem\LibraryServices\obj\Debug\netstandard2.0\LibraryServices.csproj.CopyComplete
+D:\vs2019Project\LibraryReservationSystem\LibraryServices\obj\Debug\netstandard2.0\LibraryServices.dll
+D:\vs2019Project\LibraryReservationSystem\LibraryServices\obj\Debug\netstandard2.0\LibraryServices.pdb
