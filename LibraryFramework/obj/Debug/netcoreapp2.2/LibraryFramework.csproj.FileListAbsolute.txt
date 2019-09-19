@@ -1,0 +1,16 @@
+D:\vs2019Project\LibraryReservationSystem\LibraryFramework\bin\Debug\netcoreapp2.2\LibraryFramework.deps.json
+D:\vs2019Project\LibraryReservationSystem\LibraryFramework\bin\Debug\netcoreapp2.2\LibraryFramework.dll
+D:\vs2019Project\LibraryReservationSystem\LibraryFramework\bin\Debug\netcoreapp2.2\LibraryEntities.dll
+D:\vs2019Project\LibraryReservationSystem\LibraryFramework\bin\Debug\netcoreapp2.2\LibraryEntities.pdb
+D:\vs2019Project\LibraryReservationSystem\LibraryFramework\obj\Debug\netcoreapp2.2\LibraryFramework.csprojAssemblyReference.cache
+D:\vs2019Project\LibraryReservationSystem\LibraryFramework\obj\Debug\netcoreapp2.2\LibraryFramework.csproj.CoreCompileInputs.cache
+D:\vs2019Project\LibraryReservationSystem\LibraryFramework\obj\Debug\netcoreapp2.2\LibraryFramework.AssemblyInfoInputs.cache
+D:\vs2019Project\LibraryReservationSystem\LibraryFramework\obj\Debug\netcoreapp2.2\LibraryFramework.AssemblyInfo.cs
+D:\vs2019Project\LibraryReservationSystem\LibraryFramework\obj\Debug\netcoreapp2.2\LibraryFramework.csproj.CopyComplete
+D:\vs2019Project\LibraryReservationSystem\LibraryFramework\bin\Debug\netcoreapp2.2\CommonUlities.dll
+D:\vs2019Project\LibraryReservationSystem\LibraryFramework\bin\Debug\netcoreapp2.2\LibraryServices.dll
+D:\vs2019Project\LibraryReservationSystem\LibraryFramework\bin\Debug\netcoreapp2.2\LibraryServices.pdb
+D:\vs2019Project\LibraryReservationSystem\LibraryFramework\bin\Debug\netcoreapp2.2\CommonUlities.pdb
+D:\vs2019Project\LibraryReservationSystem\LibraryFramework\bin\Debug\netcoreapp2.2\LibraryFramework.pdb
+D:\vs2019Project\LibraryReservationSystem\LibraryFramework\obj\Debug\netcoreapp2.2\LibraryFramework.dll
+D:\vs2019Project\LibraryReservationSystem\LibraryFramework\obj\Debug\netcoreapp2.2\LibraryFramework.pdb

@@ -28,6 +28,7 @@ namespace LibraryReservationSystem
                     var context = services.GetRequiredService<MyDbContext>();
                     context.Database.Migrate();
                     SysUserData.Initialize(services);
+                    LibrarySeatData.Initialize(services);
                 }
                 catch (Exception ex)
                 {

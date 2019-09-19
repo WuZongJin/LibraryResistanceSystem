@@ -1,4 +1,5 @@
 ﻿using LibraryEntities.Models;
+using LibraryFramework.AdminAuth;
 using LibraryServices;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -19,6 +20,7 @@ namespace LibraryReservationSystem.Controllers
         private const string R_KEY = "rnd_key";
         private AjaxResult _ajaxResult = new AjaxResult();
         private ISysUserService _sysUserService;
+        private IAdminAuthService _adminAuthService;
 
 
         public AjaxResult AjaxResult
@@ -57,6 +59,12 @@ namespace LibraryReservationSystem.Controllers
             }
 
             var result = _sysUserService.AvailableDataUser(loginModel.Account, loginModel.Password, loginModel.R);
+
+            if (result.status)
+            {
+                _adminAuthService.SignIn(result.token, result.user.Name);
+            }
+
             return Ok(result);
         }
 

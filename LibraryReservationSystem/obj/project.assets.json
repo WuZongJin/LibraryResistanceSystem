@@ -4741,9 +4741,25 @@
           "bin/placeholder/LibraryEntities.dll": {}
         }
       },
+      "LibraryFramework/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.2",
+        "dependencies": {
+          "LibraryEntities": "1.0.0",
+          "LibraryServices": "1.0.0",
+          "Microsoft.AspNetCore.Authentication": "2.2.0",
+          "Microsoft.AspNetCore.Http.Abstractions": "2.2.0"
+        },
+        "compile": {
+          "bin/placeholder/LibraryFramework.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/LibraryFramework.dll": {}
+        }
+      },
       "LibraryServices/1.0.0": {
         "type": "project",
-        "framework": ".NETStandard,Version=v2.0",
+        "framework": ".NETCoreApp,Version=v2.2",
         "dependencies": {
           "CommonUlities": "1.0.0",
           "LibraryEntities": "1.0.0",
@@ -12970,6 +12986,11 @@
       "path": "../LibraryModels/LibraryEntities.csproj",
       "msbuildProject": "../LibraryModels/LibraryEntities.csproj"
     },
+    "LibraryFramework/1.0.0": {
+      "type": "project",
+      "path": "../LibraryFramework/LibraryFramework.csproj",
+      "msbuildProject": "../LibraryFramework/LibraryFramework.csproj"
+    },
     "LibraryServices/1.0.0": {
       "type": "project",
       "path": "../LibraryServices/LibraryServices.csproj",
@@ -12980,6 +13001,7 @@
     ".NETCoreApp,Version=v2.2": [
       "CommonUlities >= 1.0.0",
       "LibraryEntities >= 1.0.0",
+      "LibraryFramework >= 1.0.0",
       "LibraryServices >= 1.0.0",
       "Microsoft.AspNetCore.App >= 2.2.0",
       "Microsoft.AspNetCore.Mvc.DataAnnotations >= 2.2.0",
@@ -13023,6 +13045,9 @@
           "projectReferences": {
             "D:\\vs2019Project\\LibraryReservationSystem\\CommonUlities\\CommonUlities.csproj": {
               "projectPath": "D:\\vs2019Project\\LibraryReservationSystem\\CommonUlities\\CommonUlities.csproj"
+            },
+            "D:\\vs2019Project\\LibraryReservationSystem\\LibraryFramework\\LibraryFramework.csproj": {
+              "projectPath": "D:\\vs2019Project\\LibraryReservationSystem\\LibraryFramework\\LibraryFramework.csproj"
             },
             "D:\\vs2019Project\\LibraryReservationSystem\\LibraryModels\\LibraryEntities.csproj": {
               "projectPath": "D:\\vs2019Project\\LibraryReservationSystem\\LibraryModels\\LibraryEntities.csproj"

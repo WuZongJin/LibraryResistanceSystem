@@ -13,6 +13,8 @@ namespace LibraryEntities.Models
         public SysUser()
         {
             SysUserTokens = new HashSet<SysUserToken>();
+            OrderDetails = new HashSet<OrderDetail>();
+
         }
         public Guid Id { get; set; }                    //数据库主键
         [Required]
@@ -34,5 +36,6 @@ namespace LibraryEntities.Models
         public DateTime? AllowScheduleTime { get; set; }    //允许预定时间
 
         public virtual ICollection<SysUserToken> SysUserTokens { get; set; }
+        public virtual ICollection<OrderDetail> OrderDetails { get; set; }
     }
 }

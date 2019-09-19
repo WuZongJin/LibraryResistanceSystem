@@ -1,10 +1,11 @@
-﻿using System;
+﻿
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Text;
 
-namespace LibraryEntities
+namespace LibraryEntities.Models
 {
     [Table("orderdetail")]
     public class OrderDetail
@@ -19,9 +20,12 @@ namespace LibraryEntities
         [Required]
         public DateTime EndTime { get; set; }               //订单结束的时间
         [Required]
+        public string VerificationCode { get; set; }        //验证码
+        [Required]
         public bool HasCheckIn { get; set; }                 //是否已经打卡
         [Required]
-        public bool HasEnd { get; set; }                    //该订单是否已经结束
+        public bool HasEnd { get; set; }                    //是否已经结束
+
 
     }
 }

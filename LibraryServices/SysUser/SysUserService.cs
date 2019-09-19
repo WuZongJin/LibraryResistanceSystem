@@ -29,6 +29,11 @@ namespace LibraryServices
             return _userRepository.Table.FirstOrDefault(u => u.Account == account);
         }
 
+        public SysUser GetById(Guid id)
+        {
+            return _userRepository.Table.FirstOrDefault(u => u.Id == id);
+        }
+
         public SysUser GetLogined(string token)
         {
             SysUser user = null;
@@ -138,5 +143,7 @@ namespace LibraryServices
             return (true, "注册成功", user);
 
         }
+
+        
     }
 }

@@ -37,6 +37,7 @@ namespace LibraryReservationSystem
             services.AddSingleton<IMemoryCache, MemoryCache>();
             services.AddScoped(typeof(IRepository<>), typeof(EFRepository<>));
             services.AddScoped<ISysUserService, SysUserService>();
+            services.AddScoped<ILibrarySeatService, LibrarySeatService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

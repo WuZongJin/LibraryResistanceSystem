@@ -15,5 +15,7 @@ namespace LibraryEntities
 
         public DbSet<SysUser> SysUsers { get; set; }
         public DbSet<SysUserToken> SysUserTokens { get; set; }
+        public DbSet<LibrarySeat> LibrarySeats { get; set; }
+        public DbSet<OrderDetail> OrderDetails { get; set; }
     }
 }

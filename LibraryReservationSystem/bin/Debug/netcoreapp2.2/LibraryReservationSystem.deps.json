@@ -26,6 +26,7 @@
         "dependencies": {
           "CommonUlities": "1.0.0",
           "LibraryEntities": "1.0.0",
+          "LibraryFramework": "1.0.0",
           "LibraryServices": "1.0.0",
           "Microsoft.AspNetCore.App": "2.2.0",
           "Microsoft.AspNetCore.Mvc.DataAnnotations": "2.2.0",
@@ -443,6 +444,20 @@
         },
         "compile": {
           "LibraryEntities.dll": {}
+        }
+      },
+      "LibraryFramework/1.0.0": {
+        "dependencies": {
+          "LibraryEntities": "1.0.0",
+          "LibraryServices": "1.0.0",
+          "Microsoft.AspNetCore.Authentication": "2.2.0",
+          "Microsoft.AspNetCore.Http.Abstractions": "2.2.0"
+        },
+        "runtime": {
+          "LibraryFramework.dll": {}
+        },
+        "compile": {
+          "LibraryFramework.dll": {}
         }
       },
       "LibraryServices/1.0.0": {
@@ -3773,6 +3788,11 @@
       "sha512": ""
     },
     "LibraryEntities/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "LibraryFramework/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
