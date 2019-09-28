@@ -32,9 +32,10 @@ namespace LibraryReservationSystem.Controllers
 
         #region Constructor
 
-        public LoginController(ISysUserService sysUserService)
+        public LoginController(ISysUserService sysUserService,IAdminAuthService adminAuthService)
         {
             _sysUserService = sysUserService;
+            _adminAuthService = adminAuthService;
         }
 
         #endregion

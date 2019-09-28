@@ -1,0 +1,31 @@
+﻿@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@{
+
+}
+@model LibraryEntities.Models.LoginModel
+<h1>登录</h1>
+<div class="row">
+    <section>
+        <form method="post"
+              asp-area="Library" asp-controller="Login" asp-action="Login" >
+            <input type="hidden" id="r_random" value="@Model.R" />
+            <div class="form-group">
+                <div class="col-md-10">
+                    @Html.TextBoxFor(m => m.Account, new { @class = "form-control", placeholder = "用户名" })
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-md-10">
+                    @Html.PasswordFor(m => m.Password, new { @class = "form-control", placeholder = "密码" })
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-md-10">
+                    <input id="Mybutton" type="submit" value="登录" />
+                </div>
+            </div>
+           
+        </form>
+    </section>
+</div>
+

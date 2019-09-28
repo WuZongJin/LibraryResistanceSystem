@@ -53,7 +53,7 @@ namespace LibraryServices
 
                 if(tokenItem != null)
                 {
-                    _memoryCache.Set($"{MODEL_KEY}{userToken.SysUserId}", tokenItem.SysUser, DateTime.Now.AddHours(4));
+                    _memoryCache.Set($"{MODEL_KEY}{tokenItem.SysUserId}", tokenItem.SysUser, DateTime.Now.AddHours(4));
                     return tokenItem.SysUser;
                 }
             }

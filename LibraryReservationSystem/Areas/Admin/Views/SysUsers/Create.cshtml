@@ -1,0 +1,94 @@
+﻿@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@model LibraryEntities.Models.SysUser
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>SysUser</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Account" class="control-label"></label>
+                <input asp-for="Account" class="form-control" />
+                <span asp-validation-for="Account" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Name" class="control-label"></label>
+                <input asp-for="Name" class="form-control" />
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Password" class="control-label"></label>
+                <input asp-for="Password" class="form-control" />
+                <span asp-validation-for="Password" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Salt" class="control-label"></label>
+                <input asp-for="Salt" class="form-control" />
+                <span asp-validation-for="Salt" class="text-danger"></span>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="IsAdmin" /> @Html.DisplayNameFor(model => model.IsAdmin)
+                </label>
+            </div>
+            <div class="form-group">
+                <label asp-for="CreationTime" class="control-label"></label>
+                <input asp-for="CreationTime" class="form-control" />
+                <span asp-validation-for="CreationTime" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="LoginFailedNum" class="control-label"></label>
+                <input asp-for="LoginFailedNum" class="form-control" />
+                <span asp-validation-for="LoginFailedNum" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="AllowLoginTime" class="control-label"></label>
+                <input asp-for="AllowLoginTime" class="form-control" />
+                <span asp-validation-for="AllowLoginTime" class="text-danger"></span>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="LoginLock" /> @Html.DisplayNameFor(model => model.LoginLock)
+                </label>
+            </div>
+            <div class="form-group">
+                <label asp-for="LastLoginTime" class="control-label"></label>
+                <input asp-for="LastLoginTime" class="form-control" />
+                <span asp-validation-for="LastLoginTime" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ViolationNum" class="control-label"></label>
+                <input asp-for="ViolationNum" class="form-control" />
+                <span asp-validation-for="ViolationNum" class="text-danger"></span>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="ScheduledLock" /> @Html.DisplayNameFor(model => model.ScheduledLock)
+                </label>
+            </div>
+            <div class="form-group">
+                <label asp-for="AllowScheduleTime" class="control-label"></label>
+                <input asp-for="AllowScheduleTime" class="form-control" />
+                <span asp-validation-for="AllowScheduleTime" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

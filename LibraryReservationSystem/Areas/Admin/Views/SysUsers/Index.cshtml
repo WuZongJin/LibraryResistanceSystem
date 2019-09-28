@@ -1,0 +1,109 @@
+﻿@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@model IEnumerable<LibraryEntities.Models.SysUser>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-area="Admin" asp-controller="Sysusers" asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Account)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Password)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Salt)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IsAdmin)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CreationTime)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.LoginFailedNum)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AllowLoginTime)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.LoginLock)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.LastLoginTime)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ViolationNum)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ScheduledLock)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AllowScheduleTime)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Account)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Name)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Password)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Salt)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.IsAdmin)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CreationTime)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.LoginFailedNum)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.AllowLoginTime)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.LoginLock)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.LastLoginTime)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ViolationNum)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ScheduledLock)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.AllowScheduleTime)
+                </td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                    <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                    <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

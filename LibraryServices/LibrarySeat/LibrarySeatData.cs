@@ -11,6 +11,11 @@ namespace LibraryServices
 {
     public static class LibrarySeatData
     {
+        public static object locker = new object();
+        public static int SqlUpdateLibrarySeatTime = 30;        //
+        public static int CheckInTime = 15;     //打卡限定时间 单位分钟
+        public static int OrderEndTime = 2;     //预定默认时间 单位小时
+
         public static void Initialize(IServiceProvider serviceProvider)
         {
             using (var context = new MyDbContext(serviceProvider.GetRequiredService<DbContextOptions<MyDbContext>>()))

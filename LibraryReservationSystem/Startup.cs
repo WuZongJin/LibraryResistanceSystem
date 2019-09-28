@@ -2,10 +2,14 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using LibraryCore;
 using LibraryEntities;
+using LibraryFramework.AdminAuth;
+using LibraryFramework.Infrastructure;
 using LibraryServices;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -29,15 +33,40 @@ namespace LibraryReservationSystem
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            
+
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
             services.AddDbContextPool<MyDbContext>(options =>
             {
                 options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection"));
             });
+
+            services.AddAuthentication(o =>
+            {
+                o.DefaultAuthenticateScheme = AdminAuthInfo.AuthenticationScheme;
+                o.DefaultChallengeScheme = AdminAuthInfo.AuthenticationScheme;
+                o.DefaultSignInScheme = AdminAuthInfo.AuthenticationScheme;
+                o.DefaultSignOutScheme = AdminAuthInfo.AuthenticationScheme;
+            }).AddCookie(AdminAuthInfo.AuthenticationScheme, o =>
+            {
+                o.LoginPath = "/Library/Login/Index";
+            });
+
+            services.AddSession(o =>
+            {
+                
+            });
+
             services.AddSingleton<IMemoryCache, MemoryCache>();
             services.AddScoped(typeof(IRepository<>), typeof(EFRepository<>));
+            services.AddScoped<IAdminAuthService, AdminAuthService>();
             services.AddScoped<ISysUserService, SysUserService>();
             services.AddScoped<ILibrarySeatService, LibrarySeatService>();
+            services.AddScoped<IWorkContext, WorkContext>();
+            services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
+
+            EngineContext.Initialize(new Engine(services.BuildServiceProvider()));
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -54,14 +83,23 @@ namespace LibraryReservationSystem
             }
 
             app.UseHttpsRedirection();
-            app.UseMvc( routes=>
+            app.UseCookiePolicy();
+            app.UseSession();
+            app.UseAuthentication();
+
+            app.UseMvc(routes =>
             {
-                routes.MapAreaRoute(
-                    name: "Myarea",
-                    areaName: "Admin",
-                    template: "Admin/{controller=Home}/{action=Index}/{id?}"
-                    );
+                routes.MapRoute(
+                  name: "areas",
+                  template: "{area:exists}/{controller=Home}/{action=Index}/{id?}"
+                ); 
+
+                routes.MapRoute(
+                    name: "default",
+                    template: "{controller=Home}/{action=Index}/{id?}");
             });
+
+           
         }
     }
 }

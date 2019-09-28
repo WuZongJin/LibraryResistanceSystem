@@ -14,6 +14,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\CommonUlities\CommonUlities.csproj" />
+    <ProjectReference Include="..\LibraryCore\LibraryCore.csproj" />
     <ProjectReference Include="..\LibraryFramework\LibraryFramework.csproj" />
     <ProjectReference Include="..\LibraryModels\LibraryEntities.csproj" />
     <ProjectReference Include="..\LibraryServices\LibraryServices.csproj" />
@@ -22,7 +23,8 @@
   <ItemGroup>
     <Folder Include="Areas\Admin\Data\" />
     <Folder Include="Areas\Admin\Models\" />
-    <Folder Include="Areas\Admin\Views\" />
+    <Folder Include="Areas\Library\Data\" />
+    <Folder Include="Areas\Library\Models\" />
   </ItemGroup>
 
 </Project>

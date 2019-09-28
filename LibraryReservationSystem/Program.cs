@@ -4,6 +4,7 @@ using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 using LibraryEntities;
+using LibraryEntities.Models;
 using LibraryServices;
 using Microsoft.AspNetCore;
 using Microsoft.AspNetCore.Hosting;
@@ -29,14 +30,23 @@ namespace LibraryReservationSystem
                     context.Database.Migrate();
                     SysUserData.Initialize(services);
                     LibrarySeatData.Initialize(services);
+
+
                 }
                 catch (Exception ex)
                 {
                     var logger = services.GetRequiredService<ILogger<Program>>();
                     logger.LogError(ex, "An error occurred seeding the DB.");
                 }
-                
             }
+
+            var context1 = host.Services.CreateScope().ServiceProvider.GetRequiredService<MyDbContext>();
+            EFRepository<LibrarySeat> seatRepository = new EFRepository<LibrarySeat>(context1);
+            EFRepository<OrderDetail> orderRepository = new EFRepository<OrderDetail>(context1);
+            UpdateLibrarySeatService seatService = new UpdateLibrarySeatService(seatRepository, orderRepository);
+            seatService.Run();
+
+
             host.Run();
         }
 

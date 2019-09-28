@@ -7,9 +7,9 @@ namespace LibraryServices
 {
     public interface ISysUserService
     {
-        IList<SysUser> GetAllSysUser();
+        IList<SysUser> GetAllSysUser();     //获取所有用户
 
-        (bool state, string message, SysUser sysUser) RegisterUser(RegisterModel model);
+        (bool state, string message, SysUser sysUser) RegisterUser(RegisterModel model);        //组测
 
         SysUser GetByAccount(string account);
 

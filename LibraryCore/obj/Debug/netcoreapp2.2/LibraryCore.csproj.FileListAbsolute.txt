@@ -1,0 +1,9 @@
+D:\vs2019Project\LibraryReservationSystem\LibraryCore\bin\Debug\netcoreapp2.2\LibraryCore.deps.json
+D:\vs2019Project\LibraryReservationSystem\LibraryCore\bin\Debug\netcoreapp2.2\LibraryCore.dll
+D:\vs2019Project\LibraryReservationSystem\LibraryCore\obj\Debug\netcoreapp2.2\LibraryCore.csproj.CoreCompileInputs.cache
+D:\vs2019Project\LibraryReservationSystem\LibraryCore\obj\Debug\netcoreapp2.2\LibraryCore.AssemblyInfoInputs.cache
+D:\vs2019Project\LibraryReservationSystem\LibraryCore\obj\Debug\netcoreapp2.2\LibraryCore.AssemblyInfo.cs
+D:\vs2019Project\LibraryReservationSystem\LibraryCore\bin\Debug\netcoreapp2.2\LibraryCore.pdb
+D:\vs2019Project\LibraryReservationSystem\LibraryCore\obj\Debug\netcoreapp2.2\LibraryCore.csprojAssemblyReference.cache
+D:\vs2019Project\LibraryReservationSystem\LibraryCore\obj\Debug\netcoreapp2.2\LibraryCore.dll
+D:\vs2019Project\LibraryReservationSystem\LibraryCore\obj\Debug\netcoreapp2.2\LibraryCore.pdb

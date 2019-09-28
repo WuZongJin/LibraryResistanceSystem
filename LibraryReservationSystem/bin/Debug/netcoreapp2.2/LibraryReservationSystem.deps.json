@@ -25,6 +25,7 @@
       "LibraryReservationSystem/1.0.0": {
         "dependencies": {
           "CommonUlities": "1.0.0",
+          "LibraryCore": "1.0.0",
           "LibraryEntities": "1.0.0",
           "LibraryFramework": "1.0.0",
           "LibraryServices": "1.0.0",
@@ -438,6 +439,17 @@
           "CommonUlities.dll": {}
         }
       },
+      "LibraryCore/1.0.0": {
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "2.2.6"
+        },
+        "runtime": {
+          "LibraryCore.dll": {}
+        },
+        "compile": {
+          "LibraryCore.dll": {}
+        }
+      },
       "LibraryEntities/1.0.0": {
         "runtime": {
           "LibraryEntities.dll": {}
@@ -448,6 +460,7 @@
       },
       "LibraryFramework/1.0.0": {
         "dependencies": {
+          "LibraryCore": "1.0.0",
           "LibraryEntities": "1.0.0",
           "LibraryServices": "1.0.0",
           "Microsoft.AspNetCore.Authentication": "2.2.0",
@@ -3783,6 +3796,11 @@
       "hashPath": "system.linq.queryable.4.0.1.nupkg.sha512"
     },
     "CommonUlities/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "LibraryCore/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

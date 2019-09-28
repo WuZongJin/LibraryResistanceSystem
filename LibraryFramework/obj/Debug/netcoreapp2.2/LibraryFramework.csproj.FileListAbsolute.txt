@@ -14,3 +14,7 @@ D:\vs2019Project\LibraryReservationSystem\LibraryFramework\bin\Debug\netcoreapp2
 D:\vs2019Project\LibraryReservationSystem\LibraryFramework\bin\Debug\netcoreapp2.2\LibraryFramework.pdb
 D:\vs2019Project\LibraryReservationSystem\LibraryFramework\obj\Debug\netcoreapp2.2\LibraryFramework.dll
 D:\vs2019Project\LibraryReservationSystem\LibraryFramework\obj\Debug\netcoreapp2.2\LibraryFramework.pdb
+D:\vs2019Project\LibraryReservationSystem\LibraryFramework\bin\Debug\netcoreapp2.2\LibraryCore.dll
+D:\vs2019Project\LibraryReservationSystem\LibraryFramework\bin\Debug\netcoreapp2.2\Microsoft.AspNetCore.Mvc.Abstractions.dll
+D:\vs2019Project\LibraryReservationSystem\LibraryFramework\bin\Debug\netcoreapp2.2\LibraryCore.pdb
+D:\vs2019Project\LibraryReservationSystem\LibraryFramework\bin\Debug\netcoreapp2.2\Microsoft.AspNetCore.Mvc.Abstractions.xml

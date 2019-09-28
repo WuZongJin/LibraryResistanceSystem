@@ -1,0 +1,16 @@
+﻿@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+@{
+    ViewData["Title"] = "Index";
+    var User = ViewData["SysUser"] as LibraryEntities.Models.SysUser;
+}
+
+<h1>Index</h1>
+
+<body>
+    this is home page
+    @if (ViewBag.SysUser != null)
+    {
+    <p>Hellow @ViewBag.SysUser?.Name</p>
+    }
+</body>
